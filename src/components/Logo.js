@@ -1,4 +1,4 @@
-import logo from './image/logo.jpg';
+import logo from '../image/logo.jpg';
 
 const Logo = () => {
     return ( 
