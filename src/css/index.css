@@ -29,9 +29,3 @@ code {
   width: 100px;
   height: 55px;
 }
-
-#movie1 {
-  /*background-image: url('https://m.media-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY1200_CR90,0,630,1200_AL_.jpg');*/
-  height: 500px;
-  background-size: cover;
-}

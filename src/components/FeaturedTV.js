@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-const FeaturedMovies = () => {
-    return (
-        <div className="featured-movies justify-content-center">
+const FeaturedTV = () => {
+    return ( 
+        <div className="featured-tv">
             <Container>
-                <h3 my={5}>Featured Movies</h3>
+                <h3 my={5}>Featured TV Shows</h3>
                 <Row xs={2} md={4} lg={6}>
                     <Col>
                         <img
@@ -63,7 +63,7 @@ const FeaturedMovies = () => {
                 </Row>
             </Container>
         </div>
-    );
+     );
 }
-
-export default FeaturedMovies;
+ 
+export default FeaturedTV;
