@@ -3,6 +3,7 @@ import { Form, Button, Col, Row } from "react-bootstrap";
 const Signup = () => {
     return (
         <div className="signup">
+            <h1 className="text-center text-dark">Sign up</h1>
             <Form>
                 <Row className="justify-content-md-center">
                     <Form.Group className="mb-3" as={Col} md="3" controlId="firstname">
