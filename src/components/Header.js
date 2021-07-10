@@ -13,7 +13,7 @@ const Header = () => {
                             <Col><Nav.Link href="/"><p class="text-white">Home</p></Nav.Link></Col>
                             <Col><Nav.Link href="/movie"><p class="text-white">Moive</p></Nav.Link></Col>
                             <Col><Nav.Link href="/tv"><p class="text-white">TV</p></Nav.Link></Col>
-                            <Col md="auto"><Nav.Link href="/sign-up"><p class="text-white">Sign up</p></Nav.Link></Col>
+                            <Col md="auto"><Nav.Link href="/signup"><p class="text-white">Sign up</p></Nav.Link></Col>
                             <Col><Nav.Link href="/login"><p class="text-white">Login</p></Nav.Link></Col>
                         </Row>
                     </Nav>
