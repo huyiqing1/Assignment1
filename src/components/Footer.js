@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return ( 
         <div className="footer">
-            <Table>
+            <Table borderless className="text-center">
                 <thead>
                     <tr>
                         <th>Watch</th>

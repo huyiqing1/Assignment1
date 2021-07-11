@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import FeaturedMovies from "../components/FeaturedMovies";
 import FeaturedTV from "../components/FeaturedTV";
 import useFetch from "../components/useFetch";
+import Content from "../components/Content";
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ const Home = () => {
             {tvsError && <div>{tvsError}</div>}
             {tvsIsPending && <div>Loading...</div>}
             {tvs && <FeaturedTV tvs={tvs} />}
+            <Content />
         </div>
     );
 }
