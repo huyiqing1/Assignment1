@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import Movies from "../pages/Movies";
 import useFetch from "./useFetch";
 import Tvs from "../pages/Tvs";
+import Detail from "../pages/Detail";
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/tvs">
             <Tvs tvs={tvs} tvsIsPending={tvsIsPending} tvsError={tvsError} />
+          </Route>
+          <Route exact path="/detail">
+            <Detail />
           </Route>
         </Switch>
         <Footer />

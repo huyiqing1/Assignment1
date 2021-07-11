@@ -7,7 +7,7 @@ const MovieList = ({ movies }) => {
             <Row xs={2} md={4} lg={6}>
                 {movies.map((movie) => (
                     <Col key={movie.id}>
-                        <Link to={`/movie?id=${movie.id}`}>
+                        <Link to={`/detail?id=${movie.id}`}>
                             <img src={movie.Poster} alt={movie.Title} className="image-fluid rounded" width={190} height={350} />
                             <span className="text-dark">{movie.Title}</span>
                         </Link>
