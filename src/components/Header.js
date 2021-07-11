@@ -11,8 +11,8 @@ const Header = () => {
                         <span className="fw-bold text-secondary navbar-brand mx-3"><p className="text-white">Seneca Movie Theater</p></span>
                         <Row>
                             <Col><Nav.Link href="/"><p className="text-white">Home</p></Nav.Link></Col>
-                            <Col><Nav.Link href="/movie"><p className="text-white">Moive</p></Nav.Link></Col>
-                            <Col><Nav.Link href="/tv"><p className="text-white">TV</p></Nav.Link></Col>
+                            <Col><Nav.Link href="/movies"><p className="text-white">Moive</p></Nav.Link></Col>
+                            <Col><Nav.Link href="/tvs"><p className="text-white">TV</p></Nav.Link></Col>
                             <Col md="auto"><Nav.Link href="/signup"><p className="text-white">Sign up</p></Nav.Link></Col>
                             <Col><Nav.Link href="/login"><p className="text-white">Login</p></Nav.Link></Col>
                         </Row>

@@ -1,14 +1,9 @@
 import Hero from "../components/Hero";
 import FeaturedMovies from "../components/FeaturedMovies";
 import FeaturedTV from "../components/FeaturedTV";
-import useFetch from "../components/useFetch";
 import Content from "../components/Content";
 
-const Home = () => {
-
-    const { data: movies, movieIsPending, movieError } = useFetch("https://infinite-coast-78514.herokuapp.com/movies");
-    const { data: tvs, tvsIsPending, tvsError } = useFetch("https://infinite-coast-78514.herokuapp.com/TV");
-
+const Home = ({ movies, movieIsPending, movieError, tvs, tvsIsPending, tvsError }) => {
 
     return (
         <div className="home">
