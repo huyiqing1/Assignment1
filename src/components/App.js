@@ -34,8 +34,8 @@ function App() {
           <Route exact path="/tvs">
             <Tvs tvs={tvs} tvsIsPending={tvsIsPending} tvsError={tvsError} />
           </Route>
-          <Route exact path="/detail">
-            <Detail />
+          <Route exact path="/detail/:type/:id">
+            <Detail movies={movies} tvs={tvs} />
           </Route>
         </Switch>
         <Footer />

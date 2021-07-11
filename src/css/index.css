@@ -30,3 +30,12 @@ code {
   width: 100px;
   height: 55px;
 }
+
+.describe {
+  width: 761px;
+}
+
+.large-poster {
+  width: 1000px;
+  height: 600px;
+}

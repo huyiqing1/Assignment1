@@ -1,9 +1,19 @@
+import { useParams } from "react-router";
+import useFetch from "../components/useFetch";
+import DetailContainer from "../components/DetailContainer";
+
 const Detail = () => {
-    return ( 
+
+    const { type, id } = useParams();
+    const { data, error, isPending } = useFetch("https://infinite-coast-78514.herokuapp.com/" + type + "/" + id);
+
+    return (
         <div className="detail">
-            <p>aaaaa</p>
+            {isPending && <div>Loading...</div>}
+            {error && <div>{error}</div>}
+            {data && (<DetailContainer data={data}/>)}
         </div>
-     );
+    );
 }
- 
+
 export default Detail;
