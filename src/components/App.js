@@ -8,6 +8,7 @@ import Movies from "../pages/Movies";
 import useFetch from "./useFetch";
 import Tvs from "../pages/Tvs";
 import Detail from "../pages/Detail";
+import Dashboard from "../pages/Dashboard";
 
 function App() {
 
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route exact path="/detail/:type/:id">
             <Detail movies={movies} tvs={tvs} />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
         <Footer />

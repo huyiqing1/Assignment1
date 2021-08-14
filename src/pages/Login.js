@@ -11,7 +11,6 @@ const Login = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
         const login = {email, password};
-        console.log(login);
 
         fetch("https://powerful-refuge-22610.herokuapp.com/auth",{
             method: "POST",
@@ -19,10 +18,10 @@ const Login = () => {
             body: JSON.stringify(login)
         }).then((res)=>{
             if(res.ok){
-                console.log(res);
-                //history.push("/dashboard");
+                history.push("/dashboard");
+                sessionStorage.setItem("Auth", email);
             } else {
-                alert("Email or password not valid! Please try again!")
+                alert("Email or password not valid! Please try again!");
             }
         })
     }
