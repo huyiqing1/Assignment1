@@ -5,7 +5,7 @@ import DetailContainer from "../components/DetailContainer";
 const Detail = () => {
 
     const { type, id } = useParams();
-    const { data, error, isPending } = useFetch("https://infinite-coast-78514.herokuapp.com/" + type + "/" + id);
+    const { data, error, isPending } = useFetch("https://powerful-refuge-22610.herokuapp.com/" + type + "/" + id);
 
     return (
         <div className="detail">

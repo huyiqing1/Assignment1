@@ -12,9 +12,9 @@ const FeaturedTV = ({tvs}) => {
                                 <Row xs={2} md={4} lg={6}>
                                         {featuredTvs.map((tv) => (
                                                 <Col key={tv.id}>
-                                                        <Link to={`/detail/tv/${tv.id}`}>
-                                                                <img src={tv.Poster} alt={tv.Title} className="image-fluid rounded" width={190} height={350} />
-                                                                <span className="text-dark">{tv.Title}</span>
+                                                        <Link to={`/detail/tv/${tv._id}`}>
+                                                                <img src={tv.poster} alt={tv.title} className="image-fluid rounded" width={190} height={350} />
+                                                                <span className="text-dark">{tv.title}</span>
                                                         </Link>
                                                 </Col>
                                         ))}

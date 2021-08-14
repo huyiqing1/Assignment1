@@ -11,8 +11,8 @@ import Detail from "../pages/Detail";
 
 function App() {
 
-  const { data: movies, movieIsPending, movieError } = useFetch("https://infinite-coast-78514.herokuapp.com/movies");
-  const { data: tvs, tvsIsPending, tvsError } = useFetch("https://infinite-coast-78514.herokuapp.com/TV");
+  const { data: movies, movieIsPending, movieError } = useFetch("https://powerful-refuge-22610.herokuapp.com/movies");
+  const { data: tvs, tvsIsPending, tvsError } = useFetch("https://powerful-refuge-22610.herokuapp.com/tvs");
 
   return (
     <div className="App bg-secondary">
