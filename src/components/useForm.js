@@ -26,7 +26,7 @@ const useForm = (validateInfo) => {
     const handleSubmit = e =>{
         e.preventDefault();
         setErrors(validateInfo(values));
-        fetch("https://powerful-refuge-22610.herokuapp.com/users", {
+        fetch("https://online-movie-store-back-end.herokuapp.com/users", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(values)

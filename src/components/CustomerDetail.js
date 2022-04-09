@@ -6,7 +6,7 @@ const CustomerDetail = ({data}) => {
     const [lastName, setLastName] = useState("");
     const [role, setRole] = useState("");
 
-    fetch("https://powerful-refuge-22610.herokuapp.com/users")
+    fetch("https://online-movie-store-back-end.herokuapp.com/users")
     .then((res)=>{
         return res.json();
     })

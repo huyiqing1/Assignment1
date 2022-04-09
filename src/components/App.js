@@ -12,8 +12,8 @@ import Dashboard from "../pages/Dashboard";
 
 function App() {
 
-  const { data: movies, movieIsPending, movieError } = useFetch("https://powerful-refuge-22610.herokuapp.com/movies");
-  const { data: tvs, tvsIsPending, tvsError } = useFetch("https://powerful-refuge-22610.herokuapp.com/tvs");
+  const { data: movies, movieIsPending, movieError } = useFetch("https://online-movie-store-back-end.herokuapp.com/movies");
+  const { data: tvs, tvsIsPending, tvsError } = useFetch("https://online-movie-store-back-end.herokuapp.com/tvs");
 
   return (
     <div className="App bg-secondary">

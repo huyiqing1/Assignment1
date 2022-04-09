@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
         const login = {email, password};
 
-        fetch("https://powerful-refuge-22610.herokuapp.com/auth",{
+        fetch("https://online-movie-store-back-end.herokuapp.com/auth",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(login)
@@ -29,7 +29,7 @@ const Login = () => {
     return (
         <div className="login">
             <h1 className="text-center text-dark">Log in</h1>
-            <Form action="https://powerful-refuge-22610.herokuapp.com/auth" onSubmit={handleSubmit}>
+            <Form action="https://online-movie-store-back-end.herokuapp.com/auth" onSubmit={handleSubmit}>
                 <Row className="justify-content-md-center">
                     <Form.Group className="mb-3 justify-content-md-center" as={Col} md="6" controlId="email" value={email} onChange={(e)=> setEmail(e.target.value)}>
                         <Form.Label>Email</Form.Label>
